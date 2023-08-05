@@ -26,27 +26,29 @@ html *::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
     color: white !important;
     border-color: none;
 }
 
-:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected {
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, .ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected {
     color: #dcf836;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected::after {
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected::after {
     border: none !important;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-open::after {
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item:hover::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu:hover::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-active::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-active::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-open::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-open::after {
     border: none !important;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu::after {
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item::after, .ant-menu-light.ant-menu-horizontal >.ant-menu-submenu::after, .ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu::after {
     border: none !important;
 }
-
 
 .ant-menu-item:hover{
     color: #dcf836 !important;
+}
+.ant-card .ant-card-meta-description {
+    color: #abb7c4 !important;
 }
 .dark-theme{
     background-color: #020d18;

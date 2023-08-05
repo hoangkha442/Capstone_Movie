@@ -1,20 +1,23 @@
-:where(.css-dev-only-do-not-override-14wwjjs).ant-card .ant-card-body {
+.ant-card .ant-card-body {
     padding: 15px;
     border-radius: 0 0 8px 8px;
 }
 
-:where(.css-dev-only-do-not-override-14wwjjs).ant-card .ant-card-meta-title {
+.ant-card .ant-card-meta-title {
     color: white !important;
     text-transform: uppercase;;
     transition: all 0.3s;
 }
+.ant-card .ant-card-meta-title{
+    transition: all 1s;
+}
 .ant-card:hover .ant-card-meta-title{
     color: #dcf836 !important;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-card .ant-card-meta-detail >div:not(:last-child) {
+.ant-card .ant-card-meta-detail >div:not(:last-child) {
     margin-bottom: 4px;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-card .ant-card-meta-description {
+.ant-card-meta-description {
     color: #c6ced5;
 }
 
@@ -60,16 +63,24 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-:where(.css-dev-only-do-not-override-14wwjjs).ant-pagination .ant-pagination-item-active {
+.ant-pagination-item-active {
     font-weight: 600;
-    /* background-color: #dcf836; */
     background-color: #020d18;
-    border: none;;
+    border: none;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-pagination .ant-pagination-item-active a {
+.ant-pagination .ant-pagination-item-active {
+    border: none !important;
+    background-color: transparent !important;
+}
+.ant-pagination .ant-pagination-item-active:hover {
+    border: none !important;
+}
+.ant-pagination-item-active a {
     color: #dcf836 !important;
+    background-color: #020d18;
+    border: none !important;
 }
-:where(.css-dev-only-do-not-override-14wwjjs).ant-pagination .ant-pagination-item a {
+.ant-pagination .ant-pagination-item a {
     color: #428bca;
 }
 .ant-pagination-item-link span svg{
