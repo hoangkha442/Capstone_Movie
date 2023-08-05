@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Maven Pro', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 10px;
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #abb7c4;
+}
+
+
+.container-90{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-80{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+:where(.css-dev-only-do-not-override-14wwjjs).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: white !important;
+    border-color: none;
+}
+
+:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected {
+    color: #dcf836;
+}
+:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-selected::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-selected::after {
+    border: none !important;
+}
+:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-open::after {
+    border: none !important;
+}
+:where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-item::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu::after, :where(.css-dev-only-do-not-override-14wwjjs).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu::after {
+    border: none !important;
+}
+
+
+.ant-menu-item:hover{
+    color: #dcf836 !important;
+}
+.dark-theme{
+    background-color: #020d18;
+}
+.grey-light{
+    color: #abb7c4;
+}
+
+.bg-banner{
+    background-image: url(/public/img/slider-bg2.jpg);
+}
+
+.bg-footer{
+    background-image: url(/public/img/footer-bg.jpg);
+}
+
+.search-form::after{
+    font-family: "Font Awesome 5 Free";
+   content: "\f002";
+   display: block;
+    position: absolute;
+   display: inline-block;
+   padding-right: 3px;
+   font-weight: 900;
+   top: 10px;
+    right: 15px;
+    z-index: 10; 
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.selection{
+    -webkit-appearance: none; /* Safari và Chrome */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Các trình duyệt khác */
+}
+
+/* CAROUSEL */
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    /* bottom: var(--swiper-pagination-bottom, 8px); */
+    /* top: var(--swiper-pagination-top, auto); */
+    /* left: 0; */
+    bottom: 0px !important;
+    right: 0 !important;
+}
+.swiper-pagination {
+    text-align: end !important;
+}
+.swiper-wrapper {
+    height: 440px !important;
+}
+
+.swiper-pagination-bullet{
+    background-color: white !important;
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 100%;
+    opacity: 0.9 !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #dcf836 !important;
+}
+.swiper-button-prev, .swiper-button-next {
+    display: none !important;
+}
+
+.banner-item::before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: red;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+.figcaption-text{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-align: left;
+    transform: translateY(150px);
+    transition: all .75s;
+}
+
+.overlay:hover .figcaption-text{
+    transform: translateY(40px);
+    color: #dcf836 !important;
+}
+
+.bg-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
 }
