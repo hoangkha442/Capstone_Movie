@@ -41,7 +41,7 @@ export default function Footer() {
           <Col span={4}>
               <p className='text-[16px] font-bold text-white mt-4'>Legal</p>
               <ul className='text-[#abb7c4] tracking-wider mt-6'>
-                <li><a href="#">Terms of Use</a></li>
+                <li><a className='transition-all duration-700 hover:text-[#dcf836]' href="#">Terms of Use</a></li>
                 <li className='mt-1'><a className='transition-all duration-700 hover:text-[#dcf836]' href="#">Privacy Policy</a></li>
                 <li className='mt-1'><a className='transition-all duration-700 hover:text-[#dcf836]' href="#">Security</a></li>
               </ul>

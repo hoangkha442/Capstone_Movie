@@ -1,6 +1,4 @@
 import React from "react";
-import { SearchOutlined } from "@ant-design/icons";
-import { Button, Input, Select, Space, Typography } from "antd";
 export default function Search() {
   return (
     <form

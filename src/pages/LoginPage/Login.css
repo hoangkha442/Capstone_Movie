@@ -1,0 +1,17 @@
+.Login {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+.ant-form-item-label{
+    padding-bottom: 0 !important;
+}
+.ant-form-item-label label {
+    font-size: 13px !important;
+    font-weight: 500;
+    color: rgb(55, 65, 81);
+    text-transform: uppercase;
+}
