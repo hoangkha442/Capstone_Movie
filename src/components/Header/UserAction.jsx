@@ -9,8 +9,8 @@ export default function UserAction() {
   let user = useSelector((state) => state.userSlice.userInfo)
   // console.log('user: ', user);
   let handleLogout = () => { 
+    message.success('Logout successful!')  
     setTimeout(() => {
-      message.success('Logout successful!')  
       localSevice.remove()
       window.location.reload()
     },500)
