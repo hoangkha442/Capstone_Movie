@@ -13,7 +13,6 @@ export default function TabsMovie() {
         movieService.getInforToTheater()
         .then((res) => { 
           setHeThongRap(res.data.content)
-          console.log('res.data.content: ', res.data.content);
         })
         .catch((err) => { 
           

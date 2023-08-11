@@ -1,4 +1,4 @@
-.Login {
+.Register {
     background-image: url(../../../public/img/bg-login.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,4 +15,8 @@
     font-weight: 500;
     color: rgb(55, 65, 81);
     text-transform: uppercase;
+}
+
+.ant-select{
+    width: 100% !important;
 }

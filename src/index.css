@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Maven Pro', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html *::-webkit-scrollbar {
@@ -14,6 +15,7 @@ html *::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #abb7c4;
 }
+
 
 
 .container-90{

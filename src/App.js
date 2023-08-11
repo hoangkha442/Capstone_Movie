@@ -4,6 +4,9 @@ import UserTemplate from './templates/UserTemPlate.jsx/UserTemplate';
 import HomePage from './pages/HomePage/HomePage';
 import Search from './pages/Search/Search';
 import LoginPage from './pages/LoginPage/LoginPage';
+import Details from './pages/Details/Details';
+import RegisterPage from './pages/RegisterPage/RegisterPage';
+import BuyTicket from './pages/BuyTicket/BuyTicket';
 
 function App() {
   return (
@@ -13,7 +16,10 @@ function App() {
         <Route path='/' element={<UserTemplate />}>
           <Route index element={<HomePage />}/>
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/register' element={<RegisterPage />} />
           <Route path='/search' element={<Search />} />
+          <Route path='/detail/:id' element={<Details />} />
+          <Route path='/buy-tickets/:id' element={<BuyTicket />} />
         </Route>
 
         {/* ADMIN LAYOUT  */}

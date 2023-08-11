@@ -15,6 +15,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+import { NavLink } from 'react-router-dom'
 
 const { Meta } = Card;
 
@@ -63,6 +64,7 @@ export default function Banner() {
             {movieArr.map((item,index) => { 
             return(
               <SwiperSlide key={index}>
+                <NavLink to={`/detail/${item.maPhim}`}>
                 <figure className='banner-item hover:before:left-[125%] relative overflow-hidden cursor-pointer'>
                     <img className='h-[400px] object-cover rounded' src={item.hinhAnh} alt={item.tenPhim} />
                     <figcaption className='overlay absolute left-0 bottom-0 w-full h-[100%] opacity-0 bg-overlay hover:opacity-100 transition-all'>
@@ -72,6 +74,7 @@ export default function Banner() {
                       </div>
                     </figcaption>
                 </figure>
+                </NavLink>
               </SwiperSlide>
             )
            })}

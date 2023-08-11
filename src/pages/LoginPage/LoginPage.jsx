@@ -31,9 +31,8 @@ export default function LoginPage() {
     })
   };
   return (
-   <div className="dark-theme py-10">
+   <div className="Login py-10">
     <div className="container-80">
-    <div className='Login'>
           <div className="relative flex flex-col justify-cente overflow-hidden">
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl md:max-w-lg">
               <h1 className="text-3xl font-semibold text-center text-purple-700 uppercase">
@@ -58,7 +57,7 @@ export default function LoginPage() {
                 autoComplete="off"
               >
                 <Form.Item
-                label="Username"
+                label="Account"
                   className='mb-2'
                   name="taiKhoan"
                   rules={[
@@ -158,8 +157,6 @@ export default function LoginPage() {
               </p>
             </div>
           </div>
-
-      </div>
     </div>
    </div>
   )

@@ -9,7 +9,7 @@ export default function Header() {
       <div className='dark-theme'>
         <div className="container-80 py-8 flex items-center">
           <div id="logo">
-            <Link to="/" ><img src="./img/logo.png" alt="logo" /></Link>
+            <Link to="/" ><img src="http://buster.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2018/02/logo.png" alt="logo" /></Link>
           </div>
           <UserNav />
         </div>
