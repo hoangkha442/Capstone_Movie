@@ -2,17 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { movieService } from '../../services/movieService'
 import { Tabs } from 'antd';
 import './TabsMovie.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import moment from 'moment/moment';
 const onChange = (key) => {
   console.log(key);
 };
 export default function TabsMovie() {
+  const {id} = useParams()
   const [heThongRap, setHeThongRap] = useState([])
     useEffect(() => { 
         movieService.getInforToTheater()
         .then((res) => { 
           setHeThongRap(res.data.content)
+          // console.log('res.data.content: ', res.data.content);
         })
         .catch((err) => { 
           
@@ -34,7 +36,7 @@ export default function TabsMovie() {
                 <p className='uppercase text-[16px] font-[500] text-[#dcf836]'>{phim.tenPhim}</p>
               </div>
               <NavLink
-                to={`/buy-tickets/`}
+                to={`/buy-tickets/${phim.maPhim}`}
               >
                 <div className="grid grid-cols-2 gap-2 py-5" >
                   {phim.lstLichChieuTheoPhim.slice(0,4).map((lichChieu) => { 
