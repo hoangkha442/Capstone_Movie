@@ -35,19 +35,20 @@ export default function TabsMovie() {
                 </div>
                 <p className='uppercase text-[16px] font-[500] text-[#dcf836]'>{phim.tenPhim}</p>
               </div>
-              <NavLink
-                to={`/buy-tickets/${phim.maPhim}`}
-              >
+              {}
                 <div className="grid grid-cols-2 gap-2 py-5" >
                   {phim.lstLichChieuTheoPhim.slice(0,4).map((lichChieu) => { 
-                  return (
-                    <div className="text-white rounded bg-[#428baa] leading-10 h-10 text-center px-3 text-[11px]">
+                    return (
+                      <NavLink
+                        to={`/buy-tickets/${lichChieu.maLichChieu}`}
+                      >
+                      <div className="text-white rounded bg-[#428baa] leading-10 h-10 text-center px-3 text-[11px]">
                       {moment(lichChieu.ngayChieuGioChieu).format("DD/MM/YYYY")}
                     </div>
+                    </NavLink>
                   )
                   })}
                 </div>
-          </NavLink>
             </div>
           </div>
         </div>

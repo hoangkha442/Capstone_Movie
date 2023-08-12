@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import Details from './pages/Details/Details';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import BuyTicket from './pages/BuyTicket/BuyTicket';
+import SearchItem from './pages/Search/SearchItem';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/register' element={<RegisterPage />} />
           <Route path='/search' element={<Search />} />
+          <Route path='/searchItem' element={<SearchItem />} />
           <Route path='/detail/:id' element={<Details />} />
           <Route path='/buy-tickets/:id' element={<BuyTicket />} />
         </Route>

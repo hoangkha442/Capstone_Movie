@@ -41,7 +41,6 @@ export const movieService = {
   getDetailInforFilmAndTheater: (id) => {
     return https.get(`/api/QuanLyRap/LayThongTinLichChieuPhim?MaPhim=${id}`);
   },
-  //quản lí đặt vé
   // postTicketManagement: () => {
   //   return https.post("/api/QuanLyDatVe/TaoLichChieu");
   // },
@@ -51,7 +50,8 @@ export const movieService = {
       `/api/QuanLyDatVe/LayDanhSachPhongVe?MaLichChieu=${lichChieu}`
     );
   },
-  postTicketManagement: (inforBookTicket) => {
-    return https.post("/api/QuanLyDatVe/DatVe", inforBookTicket);
-  },
+    //quản lí đặt vé
+    postTicketManagement: (inforBookTicket) => {
+      return https.post("/api/QuanLyDatVe/DatVe", inforBookTicket);
+    },
 };
