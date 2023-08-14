@@ -146,6 +146,10 @@ html *::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.bg-snipper{
+    background-color: rgba(0, 0, 0, .8);
+}
+
 @media only screen and (max-width: 991px) {
     .container {
       width: 90%;
