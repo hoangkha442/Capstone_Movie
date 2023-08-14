@@ -1,19 +1,21 @@
 
 import React, { useState } from 'react'
-import UserNav from './UserNav';
-import { Link } from 'react-router-dom';
+import { Desktop, Mobile } from '../../responsive/Responsive'
+import HeaderDesktop from './HeaderDesktop'
+import HeaderMobile from './HeaderMobile'
 
 export default function Header() {
   return (
     <header>
       <div className='dark-theme'>
-        <div className="container-80 py-8 flex items-center">
-          <div id="logo">
-            <Link to="/" ><img src="http://buster.mbkip3ms9u-e92498n216kr.p.temp-site.link/wp-content/uploads/2018/02/logo.png" alt="logo" /></Link>
-          </div>
-          <UserNav />
+
+          <Desktop>
+            <HeaderDesktop />
+          </Desktop>
+          <Mobile>
+            <HeaderMobile />
+          </Mobile>
         </div>
-      </div>
     </header>
   )
 }

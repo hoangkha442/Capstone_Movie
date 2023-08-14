@@ -9,14 +9,11 @@ export default function CardItem(props) {
     <Card
       className="bg-[#233a50] border-none"
       hoverable
-      style={{
-        width: 220,
-      }}
       cover={[
         <NavLink to={`/detail/${maPhim}`}>
           <figure className="movie-item hover:before:left-[125%] relative overflow-hidden cursor-pointer">
             <img
-              className="h-[300px] w-full object-center rounded"
+              className="md:h-[300px] h-[230px] w-full object-center rounded"
               src={hinhAnh}
               alt={tenPhim}
             />

@@ -14,7 +14,7 @@ export default function LoginPage() {
   let navigate = useNavigate()
   let dispatch = useDispatch()
   const onFinish = (values) => {
-    console.log('values: ', values);
+    // console.log('values: ', values);
     userService.postLogin(values)
     .then((res) => { 
       message.success('Login successful!');

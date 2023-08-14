@@ -53,11 +53,11 @@ export default function ListMovie() {
   };
   return (
     <div className="dark-theme">
-      <div className="container-80 mx-auto py-6 ">
+      <div className="container-80 container mx-auto py-6 ">
         <div className="uppercase text-[26px] text-white font-[500]">IN GENERES</div>
         <Menu className='dark-theme grey-light w-[70%] font-[500] text-[14px] uppercase my-8' onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
         <div className="flex-col justify-between flex-wrap">
-          <div className="lg:grid-cols-5 md:grid-cols-3 lg:grid md:grid gap-7 px-4 md:px-0 py-3 ">
+          <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:gap-3 lg:gap-4 gap-4 py-3">
             {handlerRenderListCard()}
           </div>
           <div className="flex justify-center mt-6">

@@ -1,11 +1,12 @@
 import { Button, message } from 'antd';
 import React, { Fragment, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { NavLink, useNavigate, useParams } from 'react-router-dom';
 import { movieService } from '../../services/movieService';
 import './BuyTicket.css'
 import { setUserBookTickets } from '../../redux/userSlice';
 export default function BuyTicket() {
+  const navigate = useNavigate()
   const {id} = useParams();
   const dispatch = useDispatch();
   const [showTimes, setShowTimes] = useState()
@@ -16,7 +17,7 @@ export default function BuyTicket() {
   useEffect(() => {
     movieService.getListTheaterBookTickets(id)
     .then((res) => {
-      console.log('res: ', res);
+      // console.log('res: ', res);
       setShowTimes(res.data.content);
     })
     .catch((err) => { 
@@ -40,6 +41,9 @@ export default function BuyTicket() {
       window.location.reload();
     }, 300);
   };
+  const handleChangePage = () => { 
+    return navigate('/login')
+   }
   
   const handleActiveSeats = (seat) => { 
     dispatch(setUserBookTickets(seat))
@@ -81,15 +85,15 @@ export default function BuyTicket() {
   return (
     <div className='dark-theme py-10 '>
         <div className="container-90">
-          <div className="grid grid-cols-12">
-            <div className="col-span-8">
+        {user ? <><div className="grid grid-cols-12">
+            <div className="col-span-12 md:col-span-8">
               <div className="flex items-center justify-center">
                 <div className="bg-[#233a50] rounded py-1 text-xl text-white text-center font-[500] w-[80%]">Screen</div>
               </div>
                 <div className="w-[90%] mx-auto mt-8 text-center">
                   {renderSeats()}
                 </div>
-                <div className="text-white flex items-center justify-center space-x-14 mt-5 mb-3">
+                <div className="text-white flex flex-wrap items-center justify-start md:justify-center space-x-0 md:space-x-14 mt-5 mb-3">
                   <div className="flex items-center">
                     <button className='ghe'></button>
                     <p>Regular</p>
@@ -103,7 +107,7 @@ export default function BuyTicket() {
                     <p>Selected seat</p>
                   </div>
                 </div>
-                <div className="text-white flex items-center justify-center space-x-5">
+                <div className="text-white flex flex-wrap items-center justify-start md:justify-center md:space-x-5">
                   <div className="flex items-center">
                     <button className='ghe gheDaDat'>X</button>
                     <p>Seats are booked</p>
@@ -114,7 +118,7 @@ export default function BuyTicket() {
                   </div>
                 </div>
             </div>
-            <div className="col-span-4 text-white">
+            <div className="col-span-12 md:col-span-4 md:mt-0 mt-5 text-white">
               <p className='text-center font-bold text-3xl mb-3'>Ticket information</p>
               <hr className='border-t-[1px] border-solid border-[grey]'/>
               <div className="my-3 text-[#abb7c4]">
@@ -162,7 +166,8 @@ export default function BuyTicket() {
               <button  onClick={handlePostListBookItem} class="text-sm rounded uppercase py-2 font-[500] w-full bg-red-700 text-white">Buy ticket</button>
               </div>
             </div>
-          </div>
+          </div></> : <>{handleChangePage()}</>}
+          
         </div>
     </div>
   )

@@ -8,6 +8,9 @@ export const movieService = {
   getListFilm: () => {
     return https.get("/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP11");
   },
+  findListFilm: (data) => {
+    return https.get(`/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP13&tenPhim=${data}`);
+  },
   getDetailMovie: (data) => {
     return https.get(`/api/QuanLyPhim/LayThongTinPhim?MaPhim=${data}`);
   },

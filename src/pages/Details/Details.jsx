@@ -38,9 +38,9 @@ export default function Details() {
     <div className="dark-theme h-full">
       <div className='container-80 py-20'>
       <Row gutter={32}>
-        <Col span={7}>
-          <figure className='w-[300px]'>
-            <div className="h-[470px] ">
+        <Col lg={10} xl={8}>
+          <figure className='w-64 md:w-[300px]'>
+            <div className=" md:h-[470px] h-96">
               <img className='h-full object-cover rounded' alt="example" src={detailMove.hinhAnh}/>
             </div>
             <figcaption className='border-grey p-[24px]'>
@@ -50,9 +50,9 @@ export default function Details() {
             </figcaption>
           </figure>
         </Col>
-        <Col span={17}>
-          <h2 className='text-4xl font-bold text-white'>{detailMove.tenPhim}</h2>
-          <div className="flex space-x-14 items-center">
+        <Col lg={14} xl={16}>
+          <h2 className='md:text-4xl text-3xl font-bold mt-5 md:mt-0 text-white'>{detailMove.tenPhim}</h2>
+          <div className="flex flex-wrap justify-center md:justify-normal space-x-14 items-center">
             <Progress status="exception" className='my-8' type='circle' percent={detailMove.danhGia * 10} format={(percent) => `${percent / 10}` + '/10'}/>
             <div className="">
               <button className="text-white px-10 font-[500]  py-2 bg-red-700 rounded mt-4 mr-4 hover:opacity-80 transition duration-150 ease-in-out">

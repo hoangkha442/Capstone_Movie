@@ -1,0 +1,24 @@
+.ant-modal-wrap .ant-modal {
+    width: 270px !important;
+    margin: 0!important;
+    margin-left: auto !important;
+    padding-bottom: 0 !important;
+    top: 0;
+}
+
+.ant-modal .ant-modal-content {
+    height: 100vh;
+    background-color: rgb(35, 58, 80) !important;
+}
+
+.ant-menu-item-selected{
+    background: transparent !important;
+}
+
+.ant-menu-light.ant-menu-root.ant-menu-vertical{
+    width: 100% !important;
+}
+
+.ant-modal-footer{
+    display: none !important;
+}

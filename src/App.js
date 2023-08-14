@@ -23,7 +23,6 @@ function App() {
           <Route path='/detail/:id' element={<Details />} />
           <Route path='/buy-tickets/:id' element={<BuyTicket />} />
         </Route>
-
         {/* ADMIN LAYOUT  */}
       </Routes>
     </Router>
