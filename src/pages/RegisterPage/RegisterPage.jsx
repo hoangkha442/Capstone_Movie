@@ -35,25 +35,6 @@ export default function RegisterPage() {
         });
   };
   const [form] = Form.useForm();
-  // const onGroupChange = (value) => {
-  //   switch (value) {
-  //     case 'male':
-  //       form.setFieldsValue({
-  //       });
-  //       break;
-  //     case 'female':
-  //       form.setFieldsValue({
-  //         note: 'Hi, lady!',
-  //       });
-  //       break;
-  //     case 'other':
-  //       form.setFieldsValue({
-  //         note: 'Hi there!',
-  //       });
-  //       break;
-  //     default:
-  //   }
-  // };
   return (
     <div className="Login py-10">
     <div className="container-80">

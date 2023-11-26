@@ -74,7 +74,6 @@ export default function HeaderMobile() {
             />
             <h3 className="text-xl text-white font-[500]">{user.hoTen}</h3></div>
               <Menu className='bg-[#233a50] grey-light w-[70%] font-[500] text-[14px] uppercase' onClick={onClick} items={items} />
-
               <div className="flex justify-end">
               <Button onClick={() => { 
               handleLogout()
