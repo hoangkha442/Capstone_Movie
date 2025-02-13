@@ -7,7 +7,7 @@ export const https = axios.create(
     {
         baseURL: 'https://movienew.cybersoft.edu.vn',
         headers:{
-            tokenCybersoft: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCA0NCIsIkhldEhhblN0cmluZyI6IjI0LzA2LzIwMjQiLCJIZXRIYW5UaW1lIjoiMTcwMzM3NjAwMDAwMDAwIiwiaWF0IjoxNzAwOTY1MTI3fQ.RmqB24Zmi7WatJYLfKwAjCekXIAhyc34mOiKN08WEBE',
+            tokenCybersoft: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCA3OCIsIkhldEhhblN0cmluZyI6IjIwLzA3LzIwMjUiLCJIZXRIYW5UaW1lIjoiMTc1Mjk2OTYwMDAwMCIsIm5iZiI6MTcyNjA3NDAwMCwiZXhwIjoxNzUzMTE3MjAwfQ.Qh5EKISAVqlhbNkgh1gtzDLUv1TXC7WpqNdNpAS2274',
             Authorization: "Bearer " + localSevice.get()?.accessToken,
         }
     }
